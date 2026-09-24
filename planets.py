@@ -43,10 +43,6 @@ simulate()
 
 - update docstring
 
-write_dataset()
-
-- outline
-
 """ # Tasks
 
 planet_dataset = []
@@ -64,6 +60,15 @@ def write_dataset():
     """
     Stores the current `planet_dataset` as a .csv file.
     """
+
+    # initialize a string
+
+    # for each row in the dataset:
+        # append `element,element,element` + `\n`
+    # remove the last \n
+
+    # with _ as _ (write)
+        # write a string to the file
     ...
 
 def main():
