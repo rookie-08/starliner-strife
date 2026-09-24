@@ -90,9 +90,12 @@ def distance_planets(planets_x, planets_y, i, j):
     # Pythagorean expression `distance_expression()`
     ...
 
-def closest_planet(i):
+def closest_planet(planets_x, planets_y, i):
     """
     Returns the index of the closest destination to planet `i`.
+
+    Also takes in the lists of the x and y coordinates of the planets
+    (`planets_x` and `planets_y`)
     """
 
     # Variable distance_is_set
