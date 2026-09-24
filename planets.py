@@ -126,9 +126,9 @@ def score_planets():
         # scores[element] = scores + 1
     ...
 
-def decay_planets():
+def decay_planets(planets_scores):
     """
-    Multiplies every planet's score by 0.9.
+    Multiplies every element in `planets_scores` by 0.9.
     """
 
     # for i in list
