@@ -91,6 +91,9 @@ def decay_planets():
     """
     Multiplies every planet's score by 0.9.
     """
+
+    # for i in list
+        # list[i] = list[i] * 0.9 # Potentially softcodable
     ...
 
 def add_to_dataset():
