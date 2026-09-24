@@ -83,30 +83,28 @@ def calculate_planet_positions(periods, semis, time):
 
 def distance_expression(x1, y1, x2, y2):
     """
-    Gets the distance between the two points (`x1`, `y1`) and (`x2`, `y2`).
+    Returns the distance between the two points (`x1`, `y1`) and (`x2`, `y2`).
     """
 
-    # Pythagorean expression
+    # Return pythagorean expression
     ...
 
-def distance_planets(planets_x, planets_y, i, j):
+def get_distance_planets(planets_x, planets_y, i, j):
     """
-    Calculates the distance between planet `i` and planet `j`.
-
-    Also takes in the lists of the x and y coordinates of the planets
-    (`planets_x` and `planets_y`)
+    Returns the distance between planet `i` and planet `j`,
+    given the two lists of planetary coordinates `planets_x`
+    and `planets_y`.
     """
 
     # Get positions of `i` and `j`, stored as four cartesian corrdinate comps
-    # Pythagorean expression `distance_expression()`
+    # Return `distance_expression()`
     ...
 
-def closest_planet(planets_x, planets_y, i):
+def get_closest_destination(planets_x, planets_y, i):
     """
-    Returns the index of the closest destination to planet `i`.
-
-    Also takes in the lists of the x and y coordinates of the planets
-    (`planets_x` and `planets_y`)
+    Returns the index of the closest destination planet to planet
+    `i`, given the two lists of planetary coordinates `planets_x`
+    and `planets_y`.
     """
 
     # Variable distance_is_set
@@ -114,7 +112,7 @@ def closest_planet(planets_x, planets_y, i):
     # Variable held_index_j
 
     # For j = 0, 7
-        # Get distance from i to j using `distance_planets()`
+        # Get distance from i to j using `get_distance_planets()`
         # j == i?
             # ignore
         # elif: distance not is set?
@@ -136,7 +134,7 @@ def calculate_closest_planets(planets_x, planets_y):
     # new planets_closest list
 
     # for i = 0, 7
-        # get the closest planet j using `closest_planet()`
+        # get the closest planet j using `get_closest_destination()`
         # place j in index i of planets_closest
 
     # return planets_closest
