@@ -41,6 +41,8 @@ Other
 
 - Split distance() to complete parameterization
 
+- Write tests for simulate()
+
 """ # Tasks
 
 # Static configuarion variables
@@ -135,10 +137,10 @@ def decay_planets():
     # return list or whatever
     ...
 
-def add_to_dataset():
+def add_to_dataset(planet_dataset, planets_scores, time):
     """
     Copies `planets_scores`, inserts `time` at the first index of
-    the copy, then appends the modified copy to planet_dataset.
+    the copy, then appends the modified copy to `planet_dataset`.
 
     The copy looks like this:
     `[time, planets_scores[0], planets_scores[1], ..., planets_scores[7]]`
