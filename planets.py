@@ -149,6 +149,8 @@ def add_to_dataset(planet_dataset, planets_scores, time):
     # copy list
     # use insert for time (on the copy)
     # append copy to dataset
+
+    # return new dataset
     ...
 
 def simulate():
