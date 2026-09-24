@@ -127,16 +127,13 @@ def closest_planet(planets_x, planets_y, i):
     # return j
     ...
 
-def analyze_planets(planets_x, planets_y):
+def calculate_closest_planets(planets_x, planets_y):
     """
-    Updates `planets_closest` to reflect the closest destination to
-    each planet.
-
-    Done by analyzing the coordinates of planets with the given lists
-    of x and y coordinates respectively.
-
-    Returns a list of closest planets.
+    Returns a list of the closest destinations to each planet, given
+    the 2 lists of coordinates `planets_x` and `planets_y`.
     """
+
+    # new planets_closest list
 
     # for i = 0, 7
         # get the closest planet j using `closest_planet()`
@@ -195,8 +192,8 @@ def simulate():
     # for loop length / simulation length softcodable
     
     # add to time
-    # move planets, calculate position with `calculate_planet_positions`
-    # call `analyze_planets`
+    # move planets, calculate and set position with `calculate_planet_positions`
+    # analyze planets, calculate and set closests analysis with `calculate_closest_planets`
     # call `score_planets`
     # call `decay_planets`
     # call `add_to_dataset`
