@@ -74,6 +74,12 @@ def move_planets(time):
     ...
 
 def distance(i, j):
+    """
+    Calculates the distance between planet `i` and planet `j`.
+    """
+
+    # Get positions of `i` and `j`, stored as four cartesian corrdinate comps
+    # Pythagorean expression
     ...
 
 def closest_planet(i):
