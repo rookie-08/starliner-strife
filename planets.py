@@ -5,12 +5,22 @@ over time.
 @author Rookie
 """ # About
 
+
 """
 """ # How this script works
 
-"""
-""" # Tasks
 
+"""
+General Development
+
+- Write how this script works
+
+- Make an upper-level outline as to how the functions are laid out
+
+- Top-down outline of the functions
+
+- Implement each of the functions
+""" # Tasks
 def main():
     ...
 
