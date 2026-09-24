@@ -73,7 +73,30 @@ def move_planets(time):
     """
     ...
 
-def closest_planet():
+def distance(i, j):
+    ...
+
+def closest_planet(i):
+    """
+    Returns the index of the closest destination to planet `i`.
+    """
+
+    # Variable distance_is_set
+    # Variable min_distance
+    # Variable held_index_j
+
+    # For j = 0, 7
+        # Get distance from i to j using `distance()`
+        # j == i?
+            # ignore
+        # elif: distance not is set?
+            # automatically set and ignore
+        # else (compare)
+            # current distance is less than stored distance?
+                # set new distance and held j
+            # else
+
+    # return j
     ...
 
 def analyze_planets():
