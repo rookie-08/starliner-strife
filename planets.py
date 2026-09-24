@@ -41,10 +41,36 @@ simulate()
 
 - update docstring
 
+write_dataset()
+
+- needs header
+
 """ # Tasks
 
+# Dynamic similation variables
+planets_x = []
+planets_y = []
+
+# Dataset
 planet_dataset = []
 """A non-jagged 2D list. Each row stores the time of the simulation, then the scores of each planet."""
+
+def move_planets(time):
+    """
+    Calculates the position of the planets using the updated `time`,
+    then sets their new positions in the `planets_x` and `planets_y`
+    tables.
+    """
+    ...
+
+def analyze_planets():
+    ...
+
+def score_planets():
+    ...
+
+def add_to_dataset():
+    ...
 
 def simulate():
     """
@@ -55,15 +81,16 @@ def simulate():
 
     # distant for loop, add an indent to the following
     
+    # add to time
     # call `move_planets`
     # call `analyze_planets`
     # call `score_planets`
     # call `add_to_dataset`
     ...
 
-def write_dataset():
+def write_dataset(dataset):
     """
-    Stores the current `planet_dataset` as a .csv file.
+    Stores `dataset` as a .csv file.
     """
 
     # initialize a string
