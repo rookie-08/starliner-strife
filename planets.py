@@ -37,7 +37,15 @@ Other
 
 - Add parameters to functions to allow for testability
 
+- Add ".csv" to gitignore
+
+- Split distance() to complete parameterization
+
 """ # Tasks
+
+# Static configuarion variables
+PLANETS_PERIODS = []
+PLANETS_SEMIS = []
 
 # Dynamic similation variables
 planets_x = []
@@ -159,9 +167,9 @@ def simulate():
     # call `add_to_dataset`
     ...
 
-def write_dataset(dataset):
+def write_dataset(dataset, path):
     """
-    Stores `dataset` as a .csv file.
+    Stores `dataset` as a .csv file in `path`.
     """
 
     # initialize a string
