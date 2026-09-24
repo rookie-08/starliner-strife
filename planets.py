@@ -36,8 +36,24 @@ General Development
 - Top-down outline of the functions
 
 - Implement each of the functions
+
+main()
+
+- Write new functions after reading outline for `main()`
+
+- After implementing, update docstring
 """ # Tasks
+
 def main():
+    """
+    Simulates.
+    """
+
+    # Simulate the data, stored as `planet_dataset`, by invoking
+    # `simulate()`.
+
+    # Write the data, initially stored as `planet_dataset`, to
+    # "scores.csv", by invoking `write_dataset()`.
     ...
 
 if (__name__ == "__main__"):
