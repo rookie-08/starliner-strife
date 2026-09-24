@@ -43,6 +43,8 @@ Other
 
 - Write tests for simulate()
 
+- Update descriptions of return descriptions in docstring
+
 """ # Tasks
 
 # Static configuarion variables
