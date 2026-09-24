@@ -85,6 +85,9 @@ def score_planets():
     Adds +1 to each planet's score if it was listed as a closest
     destination in `planets_closest`.
     """
+
+    # for "element" in closest
+        # scores[element] = scores + 1
     ...
 
 def decay_planets():
