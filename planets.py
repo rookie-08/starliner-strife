@@ -73,11 +73,18 @@ def move_planets(time):
     """
     ...
 
+def closest_planet():
+    ...
+
 def analyze_planets():
     """
     Updates `planets_closest` to reflect the closest destination to
     each planet.
     """
+
+    # for i = 0, 7
+        # get the closest planet j using `closest_planet()`
+        # place j in index i of planets_closest
     ...
 
 def score_planets():
