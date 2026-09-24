@@ -37,10 +37,34 @@ General Development
 
 - Implement each of the functions
 
-main()
+simulate()
 
-- Write new functions after reading outline for `main()`
+- outline
+
+- update docstring
+
+write_dataset()
+
+- outline
+
 """ # Tasks
+
+planet_dataset = []
+"""A non-jagged 2D list. Each row stores the time of the simulation, then the scores of each planet."""
+
+def simulate():
+    """
+    Runs a simulation using the following rules:
+
+    [RULES TBD]
+    """
+    ...
+
+def write_dataset():
+    """
+    Stores the current `planet_dataset` as a .csv file.
+    """
+    ...
 
 def main():
     """
