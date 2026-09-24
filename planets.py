@@ -107,10 +107,15 @@ def closest_planet(i):
     # return j
     ...
 
-def analyze_planets():
+def analyze_planets(planets_x, planets_y):
     """
     Updates `planets_closest` to reflect the closest destination to
     each planet.
+
+    Done by analyzing the coordinates of planets with the given lists
+    of x and y coordinates respectively.
+
+    Returns a list of closest planets.
     """
 
     # for i = 0, 7
