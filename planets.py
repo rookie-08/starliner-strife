@@ -114,6 +114,8 @@ def analyze_planets():
     # for i = 0, 7
         # get the closest planet j using `closest_planet()`
         # place j in index i of planets_closest
+
+    # return planets_closest
     ...
 
 def score_planets(planets_scores, planets_closest):
@@ -124,6 +126,8 @@ def score_planets(planets_scores, planets_closest):
 
     # for "element" in closest
         # scores[element] = scores + 1
+    
+    # return planets_scores
     ...
 
 def decay_planets(planets_scores):
