@@ -94,6 +94,8 @@ def decay_planets():
 
     # for i in list
         # list[i] = list[i] * 0.9 # Potentially softcodable
+
+    # return list or whatever
     ...
 
 def add_to_dataset():
