@@ -118,6 +118,7 @@ def simulate():
     """
 
     # distant for loop, add an indent to the following
+    # for loop length / simulation length softcodable
     
     # add to time
     # call `move_planets`
@@ -138,7 +139,7 @@ def write_dataset(dataset):
         # append `element,element,element` + `\n`
     # remove the last \n
 
-    # with _ as _ (write)
+    # with _ as _ (write) # path potentially softcodable
         # write a string to the file
     ...
 
