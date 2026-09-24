@@ -61,20 +61,24 @@ planets_scores = []
 planet_dataset = []
 """A non-jagged 2D list. Each row stores the time of the simulation, then the scores of each planet."""
 
-def move_planets(planets_periods, planets_semis, time):
+def calculate_planet_positions(periods, semis, time):
     """
     Calculates the position of the planets using the updated `time`,
-    then sets their new positions in the `planets_x` and `planets_y`
-    tables.
-
-    Returns the list-of-x-coords and list-of-y-coords.
+    as well as the list of the planets' `periods` (orbital periods)
+    and `semis` (orbital semi-major axes). Returns two variables:
+    the list of the planets' x-coordinates, and the list of the
+    planets' y-coordinates.
     """
+    # new lists
+
     # for loop (0 - 7)
         # theta = time / period
         # x = cos(th)
         # y = sin(th)
         # update planets_x
         # update planets_y
+
+    # return planets_x, planets_y
     ...
 
 def distance_expression(x1, y1, x2, y2):
@@ -191,7 +195,7 @@ def simulate():
     # for loop length / simulation length softcodable
     
     # add to time
-    # call `move_planets`
+    # move planets, calculate position with `calculate_planet_positions`
     # call `analyze_planets`
     # call `score_planets`
     # call `decay_planets`
