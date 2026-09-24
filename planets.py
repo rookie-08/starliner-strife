@@ -50,6 +50,8 @@ write_dataset()
 # Dynamic similation variables
 planets_x = []
 planets_y = []
+planets_closest = []
+planets_scores = []
 
 # Dataset
 planet_dataset = []
@@ -64,9 +66,18 @@ def move_planets(time):
     ...
 
 def analyze_planets():
+    """
+    Updates `planets_closest` to reflect the closest destination to
+    each planet.
+    """
     ...
 
 def score_planets():
+    """
+    Adds +1 to each planet's score if it was listed as a closest
+    destination in `planets_closest`, then multiplies every planet's
+    score by 0.9 regardless of if it was listed as a closest destination.
+    """
     ...
 
 def add_to_dataset():
