@@ -61,11 +61,13 @@ planets_scores = []
 planet_dataset = []
 """A non-jagged 2D list. Each row stores the time of the simulation, then the scores of each planet."""
 
-def move_planets(time):
+def move_planets(planets_periods, planets_semis, time):
     """
     Calculates the position of the planets using the updated `time`,
     then sets their new positions in the `planets_x` and `planets_y`
     tables.
+
+    Returns the list-of-x-coords and list-of-y-coords.
     """
     # for loop (0 - 7)
         # theta = time / period
