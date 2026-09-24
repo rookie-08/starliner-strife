@@ -40,13 +40,12 @@ General Development
 main()
 
 - Write new functions after reading outline for `main()`
-
-- After implementing, update docstring
 """ # Tasks
 
 def main():
     """
-    Simulates.
+    Writes a dataset representing a simulation that it runs over
+    the course of multiple simulated days.
     """
 
     # Simulate the data, stored as `planet_dataset`, by invoking
