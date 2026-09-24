@@ -31,19 +31,7 @@ Output file: days passed, score0, score1, score 2, ...
 """
 General Development
 
-- Make an upper-level outline as to how the functions are laid out
-
-- Rinse and repeat
-
-    - Top-down docstring outline
-
-    - Top-down comment outline of the functions
-
 - Implement each of the functions
-
-write_dataset()
-
-- needs header
 
 Other
 
