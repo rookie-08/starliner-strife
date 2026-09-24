@@ -140,10 +140,11 @@ def calculate_closest_planets(planets_x, planets_y):
     # return planets_closest
     ...
 
-def score_planets(planets_scores, planets_closest):
+def calculate_score_adds(planets_scores, planets_closest):
     """
     Adds +1 to an element in `planets_scores` each time its
-    index is found in `planets_closest`.
+    index is found in `planets_closest`. Subsequently returns
+    the modified `planets_scores` list. 
     """
 
     # for "element" in closest
@@ -192,7 +193,7 @@ def simulate():
     # add to time
     # move planets, calculate and set position with `calculate_planet_positions`
     # analyze planets, calculate and set closests analysis with `calculate_closest_planets`
-    # call `score_planets`
+    # add to scores after getting resutls from `calculate_score_adds`
     # call `decay_planets`
     # call `add_to_dataset`
     ...
