@@ -75,10 +75,14 @@ def analyze_planets():
 def score_planets():
     """
     Adds +1 to each planet's score if it was listed as a closest
-    destination in `planets_closest`, then multiplies every planet's
-    score by 0.9 regardless of if it was listed as a closest destination.
+    destination in `planets_closest`.
     """
     ...
+
+def decay_planets():
+    """
+    Multiplies every planet's score by 0.9.
+    """
 
 def add_to_dataset():
     ...
@@ -96,6 +100,7 @@ def simulate():
     # call `move_planets`
     # call `analyze_planets`
     # call `score_planets`
+    # call `decay_planets`
     # call `add_to_dataset`
     ...
 
