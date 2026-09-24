@@ -39,8 +39,6 @@ General Development
 
 simulate()
 
-- outline
-
 - update docstring
 
 """ # Tasks
@@ -54,6 +52,13 @@ def simulate():
 
     [RULES TBD]
     """
+
+    # distant for loop, add an indent to the following
+    
+    # call `move_planets`
+    # call `analyze_planets`
+    # call `score_planets`
+    # call `add_to_dataset`
     ...
 
 def write_dataset():
