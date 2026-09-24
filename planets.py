@@ -1,6 +1,8 @@
 """
 Writes a .csv file about the scores of different planet colonies
 over time.
+
+@author Rookie
 """
 
 def main():
