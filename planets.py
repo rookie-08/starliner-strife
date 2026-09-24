@@ -75,7 +75,12 @@ def move_planets(time):
         # update planets_y
     ...
 
-def distance_expression():
+def distance_expression(x1, y1, x2, y2):
+    """
+    Gets the distance between the two points (`x1`, `y1`) and (`x2`, `y2`).
+    """
+
+    # Pythagorean expression
     ...
 
 def distance_planets(planets_x, planets_y, i, j):
