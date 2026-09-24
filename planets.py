@@ -41,10 +41,6 @@ General Development
 
 - Implement each of the functions
 
-simulate()
-
-- update docstring
-
 write_dataset()
 
 - needs header
@@ -159,9 +155,9 @@ def add_to_dataset():
 
 def simulate():
     """
-    Runs a simulation using the following rules:
+    Runs a simulation and adds the collected data to a dataset.
 
-    [RULES TBD]
+    When going through each iteration, it moves the planets, then scores the planets.
     """
 
     # distant for loop, add an indent to the following
