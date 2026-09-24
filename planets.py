@@ -71,6 +71,12 @@ def move_planets(time):
     then sets their new positions in the `planets_x` and `planets_y`
     tables.
     """
+    # for loop (0 - 7)
+        # theta = time / period
+        # x = cos(th)
+        # y = sin(th)
+        # update planets_x
+        # update planets_y
     ...
 
 def distance(i, j):
