@@ -93,6 +93,10 @@ def add_to_dataset():
     The copy looks like this:
     `[time, planets_scores[0], planets_scores[1], ..., planets_scores[7]]`
     """
+
+    # copy list
+    # use insert for time (on the copy)
+    # append copy to dataset
     ...
 
 def simulate():
