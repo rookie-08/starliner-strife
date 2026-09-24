@@ -116,10 +116,10 @@ def analyze_planets():
         # place j in index i of planets_closest
     ...
 
-def score_planets():
+def score_planets(planets_scores, planets_closest):
     """
-    Adds +1 to each planet's score if it was listed as a closest
-    destination in `planets_closest`.
+    Adds +1 to an element in `planets_scores` each time its
+    index is found in `planets_closest`.
     """
 
     # for "element" in closest
