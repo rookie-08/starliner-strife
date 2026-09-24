@@ -35,8 +35,6 @@ General Development
 
 Other
 
-- Add parameters to functions to allow for testability
-
 - Add ".csv" to gitignore
 
 - Split distance() to complete parameterization
@@ -44,6 +42,8 @@ Other
 - Write tests for simulate()
 
 - Update descriptions of return descriptions in docstring
+
+- Refactor functions to reflect their purposes
 
 """ # Tasks
 
