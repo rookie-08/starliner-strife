@@ -33,7 +33,11 @@ General Development
 
 - Make an upper-level outline as to how the functions are laid out
 
-- Top-down outline of the functions
+- Rinse and repeat
+
+    - Top-down docstring outline
+
+    - Top-down comment outline of the functions
 
 - Implement each of the functions
 
@@ -44,6 +48,10 @@ simulate()
 write_dataset()
 
 - needs header
+
+Other
+
+- Add parameters to functions to allow for testability
 
 """ # Tasks
 
