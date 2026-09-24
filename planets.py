@@ -75,13 +75,19 @@ def move_planets(time):
         # update planets_y
     ...
 
-def distance(i, j):
+def distance_expression():
+    ...
+
+def distance_planets(planets_x, planets_y, i, j):
     """
     Calculates the distance between planet `i` and planet `j`.
+
+    Also takes in the lists of the x and y coordinates of the planets
+    (`planets_x` and `planets_y`)
     """
 
     # Get positions of `i` and `j`, stored as four cartesian corrdinate comps
-    # Pythagorean expression
+    # Pythagorean expression `distance_expression()`
     ...
 
 def closest_planet(i):
@@ -94,7 +100,7 @@ def closest_planet(i):
     # Variable held_index_j
 
     # For j = 0, 7
-        # Get distance from i to j using `distance()`
+        # Get distance from i to j using `distance_planets()`
         # j == i?
             # ignore
         # elif: distance not is set?
