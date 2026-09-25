@@ -170,6 +170,7 @@ def add_to_dataset(planet_dataset, planets_scores, time):
     """
     Copies `planets_scores`, inserts `time` at the first index of
     the copy, then appends the modified copy to `planet_dataset`.
+    Also returns the modified `planet_dataset`.
 
     The copy looks like this:
     `[time, planets_scores[0], planets_scores[1], ..., planets_scores[7]]`
