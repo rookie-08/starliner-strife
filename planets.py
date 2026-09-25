@@ -33,10 +33,6 @@ General Development
 
 - Implement each of the functions
 
-Other
-
-- Add ".csv" to gitignore
-
 """ # Tasks
 
 # Static configuarion variables
