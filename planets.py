@@ -158,14 +158,16 @@ def planets_closests(planets_x, planets_y):
     the 2 lists of coordinates `planets_x` and `planets_y`.
     """
 
-    # new planets_closest list
-
-    # for i = 0, 7
-        # get the closest planet j using `planet_closest_destination()`
-        # place j in index i of planets_closest
-
-    # return planets_closest
-    ...
+    # Initialize
+    planets_closest = []
+    # Loop
+    for i in range(len(planets_x)):
+        # Get closest destination to i
+        j = planet_closest_destination(planets_x, planets_y, i)
+        # Add destination index to list
+        planets_closest.append(j)
+    # Return
+    return planets_closest
 
 def planets_adds(planets_scores, planets_closest):
     """
