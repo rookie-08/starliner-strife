@@ -260,8 +260,8 @@ def main():
     n_length = int(input("How many days do you want to run this? "))
     start = time.perf_counter()
     planets_dataset = simulate(n_length, PLANETS_PERIODS, PLANETS_SEMIS)
-    end = time.perf_counter()
     write_dataset(planets_dataset, "scores.csv")
+    end = time.perf_counter()
     print("Simulation complete! Time elapsed:", end - start) # Prints the time elapsed
 
 if (__name__ == "__main__"):
