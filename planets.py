@@ -65,9 +65,10 @@ def calculate_planet_positions(periods, semis, time):
     """
     Calculates the position of the planets using the updated `time`,
     as well as the list of the planets' `periods` (orbital periods)
-    and `semis` (orbital semi-major axes). Returns two variables:
-    the list of the planets' x-coordinates, and the list of the
-    planets' y-coordinates.
+    and `semis` (orbital semi-major axes).
+    
+    Returns two variables: the list of the planets' x-coordinates,
+    and the list of the planets' y-coordinates.
     """
     # new lists
 
@@ -143,8 +144,9 @@ def calculate_closest_planets(planets_x, planets_y):
 def calculate_score_adds(planets_scores, planets_closest):
     """
     Adds +1 to an element in `planets_scores` each time its
-    index is found in `planets_closest`. Subsequently returns
-    the modified `planets_scores` list. 
+    index is found in `planets_closest`.
+    
+    Returns the modified `planets_scores` list. 
     """
 
     # for "element" in closest
@@ -170,9 +172,10 @@ def add_to_dataset(planet_dataset, planets_scores, time):
     """
     Copies `planets_scores`, inserts `time` at the first index of
     the copy, then appends the modified copy to `planet_dataset`.
-    Also returns the modified `planet_dataset`.
+    
+    Returns the modified `planet_dataset`.
 
-    The copy looks like this:
+    The copy, added to `planet_dataset`, looks like this:
     `[time, planets_scores[0], planets_scores[1], ..., planets_scores[7]]`
     """
 
