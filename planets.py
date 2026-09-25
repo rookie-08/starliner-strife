@@ -257,8 +257,9 @@ def main():
     the course of multiple simulated days.
     """
 
+    n_length = int(input("How many days do you want to run this? "))
     start = time.perf_counter()
-    planets_dataset = simulate(10000, PLANETS_PERIODS, PLANETS_SEMIS)
+    planets_dataset = simulate(n_length, PLANETS_PERIODS, PLANETS_SEMIS)
     end = time.perf_counter()
     print("Simulation complete! Time elapsed:", end - start) # Prints the time elapsed
     write_dataset(planets_dataset, "scores.csv")
