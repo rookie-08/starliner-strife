@@ -131,7 +131,26 @@ def planet_closest_destination(planets_x, planets_y, i):
             # else
 
     # return j
-    ...
+
+    distance_is_set = False
+    min_distance = 0
+    held_index_j = -1
+
+    length_of_list = len(planets_x)
+    for j in range(length_of_list):
+        dist_i_j = planet_distance(planets_x, planets_y, i, j)
+        if (i == j):
+            ...
+        elif (not distance_is_set):
+            distance_is_set = True
+            min_distance = dist_i_j
+            held_index_j = j
+        else:
+            if (dist_i_j < min_distance):
+                min_distance = dist_i_j
+                held_index_j = j
+
+    return held_index_j
 
 def planets_closests(planets_x, planets_y):
     """

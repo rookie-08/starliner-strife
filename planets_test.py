@@ -55,3 +55,16 @@ def test_planet_distances():
 
     # analyze
     assert expected == actual
+
+def test_planet_closest_destination():
+    # setup
+    planets_x = [-1.0, 6.0, 8.0]
+    planets_y = [1.0, -3.0, -2.0]
+    i = 1
+    expected = 2
+
+    # invoke
+    actual = planet_closest_destination(planets_x, planets_y, i)
+
+    # analyze
+    assert expected == actual
