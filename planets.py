@@ -89,8 +89,10 @@ def distance_basic(x1, y1, x2, y2):
     Returns the distance between the two points (`x1`, `y1`) and (`x2`, `y2`).
     """
 
-    # Return pythagorean expression
-    ...
+    dx = (x1 - x2)
+    dy = (y1 - y2)
+
+    return math.sqrt(dx * dx + dy * dy)
 
 def planet_distances(planets_x, planets_y, i, j):
     """

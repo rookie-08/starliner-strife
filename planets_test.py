@@ -27,3 +27,17 @@ def test_planets_positions():
     # analyze
     assert expected_x == actual_x
     assert expected_y == actual_y
+
+def test_distance_basic():
+    # setup
+    x1 = 3.0
+    y1 = 5.0
+    x2 = 7.0
+    y2 = 2.0
+    expected = 5.0
+
+    # invoke
+    actual = distance_basic(x1, y1, x2, y2)
+
+    # analyze
+    assert expected == actual
