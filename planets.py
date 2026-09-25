@@ -37,14 +37,6 @@ Other
 
 - Add ".csv" to gitignore
 
-- Split distance() to complete parameterization
-
-- Write tests for simulate()
-
-- Update descriptions of return descriptions in docstring
-
-- Refactor functions to reflect their purposes
-
 """ # Tasks
 
 # Static configuarion variables
