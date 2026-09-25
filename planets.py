@@ -36,6 +36,7 @@ General Development
 """ # Tasks
 
 import math
+import time
 
 # Static configuarion variables
 PLANETS_PERIODS = [87.97, 224.7, 365.3, 687.0, 4333, 10760, 30560, 60190]
@@ -255,8 +256,11 @@ def main():
     Writes a dataset representing a simulation that it runs over
     the course of multiple simulated days.
     """
-    
-    planets_dataset = simulate(1000, PLANETS_PERIODS, PLANETS_SEMIS)
+
+    start = time.perf_counter()
+    planets_dataset = simulate(10000, PLANETS_PERIODS, PLANETS_SEMIS)
+    end = time.perf_counter()
+    print("Simulation complete! Time elapsed:", end - start) # Prints the time elapsed
     write_dataset(planets_dataset, "scores.csv")
 
 if (__name__ == "__main__"):
