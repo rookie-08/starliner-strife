@@ -103,3 +103,22 @@ def test_planets_decays():
 
     # analyze
     assert expected == actual
+
+def test_add_to_dataset():
+    # setup
+    planet_dataset = [
+        [],
+        [],
+        [],
+        [],
+        []
+    ]
+    planets_scores = [2.0, 3.0, 4.0]
+    time = 60
+
+    # invoke
+    actual = add_to_dataset(planet_dataset, planets_scores, time)
+
+    # analyze
+    assert len(actual) == 6
+    assert actual[5] == [60, 2.0, 3.0, 4.0]
