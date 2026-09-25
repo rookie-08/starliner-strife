@@ -94,16 +94,19 @@ def distance_basic(x1, y1, x2, y2):
 
     return math.sqrt(dx * dx + dy * dy)
 
-def planet_distances(planets_x, planets_y, i, j):
+def planet_distance(planets_x, planets_y, i, j):
     """
     Returns the distance between planet `i` and planet `j`,
     given the two lists of planetary coordinates `planets_x`
     and `planets_y`.
     """
 
-    # Get positions of `i` and `j`, stored as four cartesian corrdinate comps
-    # Return `distance_basic()`
-    ...
+    x1 = planets_x[i]
+    y1 = planets_y[i]
+    x2 = planets_x[j]
+    y2 = planets_y[j]
+
+    return distance_basic(x1, y1, x2, y2)
 
 def planet_closest_destination(planets_x, planets_y, i):
     """
@@ -117,7 +120,7 @@ def planet_closest_destination(planets_x, planets_y, i):
     # Variable held_index_j
 
     # For j = 0, 7
-        # Get distance from i to j using `planet_distances()`
+        # Get distance from i to j using `planet_distance()`
         # j == i?
             # ignore
         # elif: distance not is set?

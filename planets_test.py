@@ -41,3 +41,17 @@ def test_distance_basic():
 
     # analyze
     assert expected == actual
+
+def test_planet_distances():
+    # setup
+    planets_x = [-1.0, 6.0, 8.0]
+    planets_y = [1.0, -3.0, -2.0]
+    i = 0
+    j = 1
+    expected = math.sqrt(65.0)
+
+    # invoke
+    actual = planet_distance(planets_x, planets_y, i, j)
+
+    # analyze
+    assert expected == actual
