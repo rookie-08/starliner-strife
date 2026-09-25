@@ -92,3 +92,14 @@ def test_planets_adds():
 
     # analyze
     assert expected == actual
+
+def test_planets_decays():
+    # setup
+    planets_scores = [2.0, 5.0, 7.0, 9.0]
+    expected = [1.8, 4.5, 6.3, 8.1]
+
+    # invoke
+    actual = planets_decays(planets_scores)
+
+    # analyze
+    assert expected == actual

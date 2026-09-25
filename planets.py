@@ -189,11 +189,9 @@ def planets_decays(planets_scores):
     Returns the modified `planets_scores`.
     """
 
-    # for i in list
-        # list[i] = list[i] * 0.9 # Potentially softcodable
-
-    # return list or whatever
-    ...
+    for i in range(len(planets_scores)):
+        planets_scores[i] = planets_scores[i] * 0.9 # Potentially softcodable
+    return planets_scores
 
 def add_to_dataset(planet_dataset, planets_scores, time):
     """
