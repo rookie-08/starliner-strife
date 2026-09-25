@@ -35,6 +35,8 @@ General Development
 
 """ # Tasks
 
+import math
+
 # Static configuarion variables
 PLANETS_PERIODS = []
 PLANETS_SEMIS = []
@@ -49,17 +51,38 @@ def planets_positions(periods, semis, time):
     Returns two variables: the list of the planets' x-coordinates,
     and the list of the planets' y-coordinates.
     """
-    # new lists
 
-    # for loop (0 - 7)
-        # theta = time / period
-        # x = cos(th)
-        # y = sin(th)
-        # update planets_x
-        # update planets_y
+    """
+    "p" denotes the individual planet being analyzed
+    `i` denotes the index of "p"
+    `s` denotes the semi-major-axis of "p"
+    `t` denotes the period of "p"
+    `a` denotes the angle/theta of "p"
+    `x` denotes the x-coordinate of "p"
+    `y` denotes the y-coordinate of "p"
 
-    # return planets_x, planets_y
-    ...
+    """
+
+    # initialize
+    planets_x = []
+    planets_y = []
+
+    # loop over list of periods
+    length_of_planets_list = len(periods)
+    for i in range(length_of_planets_list):
+        # given
+        t = periods[i]
+        s = semis[i]
+        # calculate
+        a = time / t
+        x = s * math.cos(a)
+        y = s * math.sin(a)
+        # append
+        planets_x.append(x)
+        planets_y.append(y)
+
+    # return two lists at once
+    return planets_x, planets_y
 
 def distance_basic(x1, y1, x2, y2):
     """
