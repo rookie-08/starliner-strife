@@ -153,9 +153,11 @@ def calculate_score_adds(planets_scores, planets_closest):
     # return planets_scores
     ...
 
-def decay_planets(planets_scores):
+def calculate_score_decays(planets_scores):
     """
     Multiplies every element in `planets_scores` by 0.9.
+
+    Returns the modified `planets_scores`.
     """
 
     # for i in list
@@ -194,7 +196,7 @@ def simulate():
     # move planets, calculate and set position with `calculate_planet_positions`
     # analyze planets, calculate and set closests analysis with `calculate_closest_planets`
     # add to scores after getting resutls from `calculate_score_adds`
-    # call `decay_planets`
+    # ditto, but with `calculate_score_decays`
     # call `add_to_dataset`
     ...
 
