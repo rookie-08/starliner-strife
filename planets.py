@@ -177,11 +177,10 @@ def planets_adds(planets_scores, planets_closest):
     Returns the modified `planets_scores` list. 
     """
 
-    # for "element" in closest
-        # scores[element] = scores + 1
-    
-    # return planets_scores
-    ...
+    for i in planets_closest:
+        planets_scores[i] = planets_scores[i] + 1.0
+
+    return planets_scores
 
 def planets_decays(planets_scores):
     """

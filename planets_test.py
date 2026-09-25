@@ -80,3 +80,15 @@ def test_planets_closests():
 
     # analyze
     assert expected == actual
+
+def test_planets_adds():
+    # setup
+    planets_scores = [2.0, 5.0, 7.0, 9.0]
+    planets_closest = [1, 1, 2, 0]
+    expected = [3.0, 7.0, 8.0, 9.0]
+
+    # invoke
+    actual = planets_adds(planets_scores, planets_closest)
+
+    # analyze
+    assert expected == actual
