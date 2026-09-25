@@ -38,8 +38,8 @@ General Development
 import math
 
 # Static configuarion variables
-PLANETS_PERIODS = []
-PLANETS_SEMIS = []
+PLANETS_PERIODS = [87.97, 224.7, 365.3, 687.0, 4333, 10760, 30560, 60190]
+PLANETS_SEMIS = [0.3871, 0.7233, 1.000, 1.524, 5.203, 9.537, 19.19, 30.07]
 """A non-jagged 2D list. Each row stores the time of the simulation, then the scores of each planet."""
 
 def planets_positions(periods, semis, time):
@@ -257,7 +257,6 @@ def main():
     """
     
     planets_dataset = simulate(1000, PLANETS_PERIODS, PLANETS_SEMIS)
-    print(planets_dataset)
     write_dataset(planets_dataset, "scores.csv")
 
 if (__name__ == "__main__"):
