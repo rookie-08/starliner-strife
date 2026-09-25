@@ -191,6 +191,9 @@ def simulate():
     Runs a simulation and adds the collected data to a dataset.
 
     When going through each iteration, it moves the planets, then scores the planets.
+
+    Returns the resultant dataset that represents the scores appearing throughout the
+    simulation.
     """
 
     # distant for loop, add an indent to the following
@@ -202,6 +205,8 @@ def simulate():
     # add to scores after getting resutls from `calculate_score_adds`
     # ditto, but with `calculate_score_decays`
     # call `add_to_dataset`
+
+    # return dataset
     ...
 
 def write_dataset(dataset, path):
