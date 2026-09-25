@@ -186,9 +186,9 @@ def add_to_dataset(planet_dataset, planets_scores, time):
     # return new dataset
     ...
 
-def simulate():
+def simulate(length):
     """
-    Runs a simulation and adds the collected data to a dataset.
+    Runs a simulation of `length` days long and adds the collected data to a dataset.
 
     When going through each iteration, it moves the planets, then scores the planets.
 
