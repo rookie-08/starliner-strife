@@ -52,7 +52,7 @@ PLANETS_PERIODS = []
 PLANETS_SEMIS = []
 """A non-jagged 2D list. Each row stores the time of the simulation, then the scores of each planet."""
 
-def calculate_planet_positions(periods, semis, time):
+def planets_positions(periods, semis, time):
     """
     Calculates the position of the planets using the updated `time`,
     as well as the list of the planets' `periods` (orbital periods)
@@ -73,7 +73,7 @@ def calculate_planet_positions(periods, semis, time):
     # return planets_x, planets_y
     ...
 
-def distance_expression(x1, y1, x2, y2):
+def distance_basic(x1, y1, x2, y2):
     """
     Returns the distance between the two points (`x1`, `y1`) and (`x2`, `y2`).
     """
@@ -81,7 +81,7 @@ def distance_expression(x1, y1, x2, y2):
     # Return pythagorean expression
     ...
 
-def get_distance_planets(planets_x, planets_y, i, j):
+def planet_distances(planets_x, planets_y, i, j):
     """
     Returns the distance between planet `i` and planet `j`,
     given the two lists of planetary coordinates `planets_x`
@@ -89,10 +89,10 @@ def get_distance_planets(planets_x, planets_y, i, j):
     """
 
     # Get positions of `i` and `j`, stored as four cartesian corrdinate comps
-    # Return `distance_expression()`
+    # Return `distance_basic()`
     ...
 
-def get_closest_destination(planets_x, planets_y, i):
+def planet_closest_destination(planets_x, planets_y, i):
     """
     Returns the index of the closest destination planet to planet
     `i`, given the two lists of planetary coordinates `planets_x`
@@ -104,7 +104,7 @@ def get_closest_destination(planets_x, planets_y, i):
     # Variable held_index_j
 
     # For j = 0, 7
-        # Get distance from i to j using `get_distance_planets()`
+        # Get distance from i to j using `planet_distances()`
         # j == i?
             # ignore
         # elif: distance not is set?
@@ -117,7 +117,7 @@ def get_closest_destination(planets_x, planets_y, i):
     # return j
     ...
 
-def calculate_closest_planets(planets_x, planets_y):
+def planets_closests(planets_x, planets_y):
     """
     Returns a list of the closest destinations to each planet, given
     the 2 lists of coordinates `planets_x` and `planets_y`.
@@ -126,13 +126,13 @@ def calculate_closest_planets(planets_x, planets_y):
     # new planets_closest list
 
     # for i = 0, 7
-        # get the closest planet j using `get_closest_destination()`
+        # get the closest planet j using `planet_closest_destination()`
         # place j in index i of planets_closest
 
     # return planets_closest
     ...
 
-def calculate_score_adds(planets_scores, planets_closest):
+def planets_adds(planets_scores, planets_closest):
     """
     Adds +1 to an element in `planets_scores` each time its
     index is found in `planets_closest`.
@@ -146,7 +146,7 @@ def calculate_score_adds(planets_scores, planets_closest):
     # return planets_scores
     ...
 
-def calculate_score_decays(planets_scores):
+def planets_decays(planets_scores):
     """
     Multiplies every element in `planets_scores` by 0.9.
 
@@ -191,10 +191,10 @@ def simulate(length):
     # for loop length / simulation length softcodable
     
     # add to time
-    # move planets, calculate and set position with `calculate_planet_positions`
-    # analyze planets, calculate and set closests analysis with `calculate_closest_planets`
-    # add to scores after getting resutls from `calculate_score_adds`
-    # ditto, but with `calculate_score_decays`
+    # move planets, calculate and set position with `planets_positions`
+    # analyze planets, calculate and set closests analysis with `planets_closests`
+    # add to scores after getting resutls from `planets_adds`
+    # ditto, but with `planets_decays`
     # call `add_to_dataset`
 
     # return dataset
