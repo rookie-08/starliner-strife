@@ -50,15 +50,6 @@ Other
 # Static configuarion variables
 PLANETS_PERIODS = []
 PLANETS_SEMIS = []
-
-# Dynamic similation variables
-planets_x = []
-planets_y = []
-planets_closest = []
-planets_scores = []
-
-# Dataset
-planet_dataset = []
 """A non-jagged 2D list. Each row stores the time of the simulation, then the scores of each planet."""
 
 def calculate_planet_positions(periods, semis, time):
