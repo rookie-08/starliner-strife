@@ -122,3 +122,15 @@ def test_add_to_dataset():
     # analyze
     assert len(actual) == 6
     assert actual[5] == [60, 2.0, 3.0, 4.0]
+
+def test_simulate():
+    # setup
+    length = 1000
+    p_periods = [1, 2, 4]
+    p_semis = [0.33, 0.66, 1.00]
+    
+    # invoke
+    actual = simulate(length, p_periods, p_semis)
+
+    # analyze
+    assert len(actual) > 0

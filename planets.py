@@ -207,7 +207,7 @@ def add_to_dataset(planet_dataset, planets_scores, time):
     planet_dataset.append([time] + planets_scores)
     return planet_dataset
 
-def simulate(length):
+def simulate(length, p_periods, p_semis):
     """
     Runs a simulation of `length` days long and adds the collected data to a dataset.
 
@@ -228,7 +228,21 @@ def simulate(length):
     # call `add_to_dataset`
 
     # return dataset
-    ...
+
+    planets_x = []
+    planets_y = []
+    planets_dests = []
+    planets_scores = [0.0 for _ in range(len(p_periods))]
+    p_dataset = []
+
+    for time in range(0, length, 10):
+        planets_x, planets_y = planets_positions(p_periods, p_semis, time)
+        planets_dests = planets_closests(planets_x, planets_y)
+        planets_scores = planets_adds(planets_scores, planets_dests)
+        planets_scores = planets_decays(planets_scores)
+        add_to_dataset(p_dataset, planets_scores, time)
+
+    return p_dataset
 
 def write_dataset(dataset, path):
     """
