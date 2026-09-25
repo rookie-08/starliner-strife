@@ -217,18 +217,6 @@ def simulate(length, p_periods, p_semis):
     simulation.
     """
 
-    # distant for loop, add an indent to the following
-    # for loop length / simulation length softcodable
-    
-    # add to time
-    # move planets, calculate and set position with `planets_positions`
-    # analyze planets, calculate and set closests analysis with `planets_closests`
-    # add to scores after getting resutls from `planets_adds`
-    # ditto, but with `planets_decays`
-    # call `add_to_dataset`
-
-    # return dataset
-
     planets_x = []
     planets_y = []
     planets_dests = []
@@ -240,7 +228,7 @@ def simulate(length, p_periods, p_semis):
         planets_dests = planets_closests(planets_x, planets_y)
         planets_scores = planets_adds(planets_scores, planets_dests)
         planets_scores = planets_decays(planets_scores)
-        add_to_dataset(p_dataset, planets_scores, time)
+        p_dataset = add_to_dataset(p_dataset, planets_scores, time)
 
     return p_dataset
 
@@ -249,28 +237,28 @@ def write_dataset(dataset, path):
     Stores `dataset` as a .csv file in `path`.
     """
 
-    # initialize a string
+    a_string = ""
 
-    # for each row in the dataset:
-        # append `element,element,element` + `\n`
-    # remove the last \n
+    for row in dataset:
+        element_string = ""
+        for element in row:
+            element_string = element_string + str(element) + ","
+        element_string = element_string[0:-1]
+        a_string = a_string + element_string + "\n"
+    a_string = a_string[0:-1]
 
-    # with _ as _ (write) # path potentially softcodable
-        # write a string to the file
-    ...
+    with open(path, "w") as file:
+        file.write(a_string)
 
 def main():
     """
     Writes a dataset representing a simulation that it runs over
     the course of multiple simulated days.
     """
-
-    # Simulate the data, stored as `planet_dataset`, by invoking
-    # `simulate()`.
-
-    # Write the data, initially stored as `planet_dataset`, to
-    # "scores.csv", by invoking `write_dataset()`.
-    ...
+    
+    planets_dataset = simulate(1000, PLANETS_PERIODS, PLANETS_SEMIS)
+    print(planets_dataset)
+    write_dataset(planets_dataset, "scores.csv")
 
 if (__name__ == "__main__"):
     main()
